@@ -5,224 +5,185 @@
     chromium --headless=new --no-pdf-header-footer --virtual-time-budget=8000 \
       --print-to-pdf=public/cv-brayan-gomez.pdf cv/cv-brayan-gomez.html
 -->
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Brayan_Gomez_CV.md</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      @page {
-        size: A4;
-        margin: 14mm 0;
-      }
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brayan Gómez — Desarrollador Full Stack Senior</title>
+<style>
+  :root{
+    --accent:#1F3A5F;
+    --gray:#444;
+    --text:#222;
+    --line:#1F3A5F;
+    --link:#1155CC;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:"Calibri","Segoe UI",Arial,sans-serif;
+    color:var(--text);
+    background:#eef0f3;
+    line-height:1.4;
+    font-size:15px;
+  }
+  .sheet{
+    max-width:820px;
+    margin:24px auto;
+    background:#fff;
+    padding:40px 48px 48px;
+    box-shadow:0 2px 14px rgba(0,0,0,.12);
+  }
+  header{text-align:center;margin-bottom:6px;}
+  h1{
+    color:var(--accent);
+    font-size:32px;
+    letter-spacing:1px;
+    margin:0 0 4px;
+    font-weight:700;
+  }
+  .subtitle{color:var(--gray);font-size:16px;margin-bottom:8px;}
+  .contact{color:var(--gray);font-size:13px;line-height:1.6;}
+  .contact a{color:var(--link);text-decoration:none;}
+  .contact a:hover{text-decoration:underline;}
+  h2{
+    color:var(--accent);
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    border-bottom:1.5px solid var(--line);
+    padding-bottom:3px;
+    margin:22px 0 10px;
+  }
+  .summary{text-align:justify;font-size:14.5px;}
+  .job{margin-top:14px;}
+  .job-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  .job-title{font-weight:700;font-size:15px;}
+  .job-company{color:var(--gray);font-weight:400;}
+  .job-dates{color:var(--gray);font-style:italic;font-size:13.5px;white-space:nowrap;}
+  ul{margin:6px 0 0;padding-left:20px;}
+  li{margin-bottom:5px;font-size:14.5px;}
+  li b{font-weight:700;}
+  .skills p{margin:5px 0;font-size:14.5px;}
+  .skills b{color:var(--text);}
+  .two{display:inline-block;margin-right:26px;}
+  footer{display:none;}
+  @media print{
+    body{background:#fff;font-size:13px;}
+    .sheet{box-shadow:none;margin:0;max-width:none;padding:0 4px;}
+    h2{margin-top:16px;}
+    a{color:var(--text);}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 10.5pt;
-        line-height: 1.5;
-        color: #373d49;
-        padding: 0 26mm;
-      }
-
-      a {
-        color: #35d7bb;
-        text-decoration: none;
-      }
-
-      h1 {
-        font-size: 24pt;
-        letter-spacing: 0.5px;
-        margin: 8mm 0 5mm;
-      }
-
-      h2 {
-        font-size: 15pt;
-        margin: 7mm 0 3.5mm;
-        break-after: avoid;
-      }
-
-      h3 {
-        font-size: 12pt;
-        margin: 6mm 0 3mm;
-        break-after: avoid;
-      }
-
-      h1,
-      h2,
-      h3 {
-        color: #373d49;
-      }
-
-      p {
-        margin: 0 0 3mm;
-      }
-
-      .dates {
-        font-style: italic;
-        margin: 0 0 3mm;
-      }
-
-      ul {
-        margin: 0 0 4mm;
-        padding-left: 7mm;
-      }
-
-      li {
-        margin-bottom: 1mm;
-      }
-    </style>
-  </head>
-  <body>
+  <header>
     <h1>BRAYAN GÓMEZ</h1>
+    <div class="subtitle">Desarrollador Full Stack Senior &nbsp;·&nbsp; Go &amp; Java &nbsp;·&nbsp; Microservicios</div>
+    <div class="contact">
+      Medellín, Colombia &nbsp;|&nbsp; +57 301 393 2979 &nbsp;|&nbsp;
+      <a href="mailto:gomezmancobrayanalexander@gmail.com">gomezmancobrayanalexander@gmail.com</a><br>
+      <a href="https://linkedin.com/in/brayangomez-dev">linkedin.com/in/brayangomez-dev</a> &nbsp;|&nbsp;
+      <a href="https://brayangomez.dev">brayangomez.dev</a>
+    </div>
+  </header>
 
-    <p>
-      <strong>Full Stack Developer</strong> Medellín, Colombia | +57 301 3932979 |
-      <a href="mailto:gomezmancobrayanalexander@gmail.com"
-        >gomezmancobrayanalexander@gmail.com</a
-      >
-      | <a href="https://www.linkedin.com/in/brayangomez-dev/">linkedin.com/in/brayangomez-dev</a>
-      | <a href="https://brayangomez.dev">brayangomez.dev</a>
-    </p>
+  <section>
+    <h2>Perfil Profesional</h2>
+    <p class="summary">Desarrollador Full Stack con más de 5 años de experiencia diseñando y evolucionando aplicaciones web escalables con Go (Golang), Java (Spring Boot), React y Angular. Especializado en arquitectura de microservicios (Go y Spring Boot), APIs REST y gRPC, y modernización de sistemas empresariales. Historial comprobado integrando pasarelas de pago, automatizando CI/CD y desplegando en la nube con Azure, Docker y Kubernetes. Fuerte enfoque en Arquitectura Limpia, testing automatizado, observabilidad y optimización del rendimiento, aplicando principios SOLID en entornos Agile/Scrum.</p>
+  </section>
 
-    <h2>SUMMARY</h2>
+  <section>
+    <h2>Experiencia Profesional</h2>
 
-    <p>
-      Full Stack Developer with 5+ years of experience building scalable web applications
-      using Go (Golang), Angular, and React. Specialized in backend microservices, RESTful
-      APIs, and leading frontend modernization projects, including high-impact migrations
-      from Angular to React. Proven track record integrating robust payment systems,
-      optimizing CI/CD pipelines, and deploying cloud-native environments via Azure and
-      Docker. Passionate about clean architecture, performance optimization, and
-      implementing SOLID principles to deliver measurable business value in Agile/Scrum
-      environments.
-    </p>
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Desarrollador Full Stack <span class="job-company">| Hibot Chat</span></div>
+        <div class="job-dates">May 2022 – Abr 2026</div>
+      </div>
+      <ul>
+        <li><b>Reduje la latencia promedio de APIs críticas ~35% (de 800 ms a 520 ms)</b> rediseñando y modernizando más de 8 microservicios en Go y Java bajo Arquitectura Limpia, mejorando escalabilidad y mantenibilidad.</li>
+        <li><b>Modernicé el backend construyendo microservicios en Java (Spring Boot)</b> durante la migración de servicios legacy, aplicando Arquitectura Limpia para mejorar la escalabilidad y la mantenibilidad.</li>
+        <li><b>Aumenté el rendimiento del frontend ~40% y la reutilización de componentes</b> liderando la migración arquitectónica de aplicaciones estratégicas de Angular a React.</li>
+        <li><b>Eliminé ~20 horas/mes de trabajo manual de facturación</b> diseñando un sistema de pagos recurrentes e integrando pasarelas de pago de terceros.</li>
+        <li><b>Reduje el tiempo de despliegue ~50%</b> optimizando pipelines CI/CD en Azure DevOps con Docker y GitHub Actions.</li>
+        <li><b>Disminuí los bugs en producción ~30%</b> implementando pruebas unitarias y de integración (Go testing) e incrementando la cobertura de código.</li>
+        <li><b>Mejoré la detección proactiva de incidentes</b> integrando observabilidad con logging estructurado y métricas (Prometheus / Grafana).</li>
+        <li><b>Contribuí a decisiones de arquitectura y estimaciones técnicas</b> participando activamente en ceremonias Agile multidisciplinarias.</li>
+      </ul>
+    </div>
 
-    <h2>EXPERIENCE</h2>
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Desarrollador Junior <span class="job-company">| Hibot Chat</span></div>
+        <div class="job-dates">May 2021 – May 2022</div>
+      </div>
+      <ul>
+        <li><b>Desarrollé aplicaciones web responsivas en Angular</b> gestionando estado complejo con NgRx para flujos de datos consistentes.</li>
+        <li><b>Amplié los canales de comunicación de la plataforma</b> construyendo integraciones y bots en Go (Arquitectura Hexagonal) para WhatsApp, Facebook, Instagram y Telegram.</li>
+        <li><b>Optimicé el procesamiento de grandes volúmenes de datos</b> construyendo pipelines de agregación avanzados en MongoDB.</li>
+      </ul>
+    </div>
 
-    <h3>Full Stack Developer | Hibot Chat</h3>
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Desarrollador Full Stack Freelance <span class="job-company">| Remoto</span></div>
+        <div class="job-dates">2020 – 2021</div>
+      </div>
+      <ul>
+        <li><b>Fundación ROFÉ:</b> desarrollé plataformas digitales de impacto social (Mujeres ROFÉ, Jóvenes creaTIvos) con despliegues productivos en Microsoft Azure.</li>
+        <li><b>KIMSA:</b> diseñé y desarrollé sistemas administrativos para una firma de consultoría ambiental con NestJS, Angular y React.</li>
+        <li><b>Integré frontend y backend vía APIs REST</b> y administré despliegues en Heroku y Hostinger.</li>
+      </ul>
+    </div>
+  </section>
 
-    <p class="dates">May 2022 – April 2026</p>
+  <section class="skills">
+    <h2>Habilidades Técnicas</h2>
+    <p><b>Lenguajes:</b> Go (Golang), Java, TypeScript, JavaScript</p>
+    <p><b>Frontend:</b> React, Angular, NgRx, HTML5, CSS3, SASS</p>
+    <p><b>Backend &amp; APIs:</b> Node.js, NestJS, Express.js, APIs REST, gRPC, Microservicios, Concurrencia (goroutines)</p>
+    <p><b>Java &amp; Spring:</b> Spring Boot, Spring MVC, Spring Data JPA, Hibernate, Maven, JUnit</p>
+    <p><b>Testing:</b> Pruebas unitarias, Pruebas de integración, TDD</p>
+    <p><b>Bases de datos:</b> PostgreSQL, MySQL, MongoDB, Redis</p>
+    <p><b>Mensajería &amp; Eventos:</b> RabbitMQ, Kafka</p>
+    <p><b>Cloud &amp; DevOps:</b> Azure DevOps, Docker, Kubernetes, CI/CD, GitHub Actions</p>
+    <p><b>Observabilidad:</b> Prometheus, Grafana, logging estructurado</p>
+    <p><b>Seguridad:</b> JWT, OAuth 2.0</p>
+    <p><b>Arquitectura:</b> Arquitectura Limpia, Arquitectura Hexagonal, DDD, SOLID</p>
+    <p><b>Herramientas:</b> Git, Jira, Agile/Scrum</p>
+  </section>
 
+  <section class="skills">
+    <h2>Idiomas</h2>
+    <p><span class="two"><b>Español:</b> Nativo</span><span class="two"><b>Inglés:</b> A2</span></p>
+  </section>
+
+  <section>
+    <h2>Formación Académica</h2>
     <ul>
-      <li>
-        <strong>Microservices Re-engineering:</strong> Rebuilt existing Go microservices
-        and delivered new projects from scratch, applying architecture best practices and
-        sound engineering principles to ensure scalable, maintainable services.
-      </li>
-      <li>
-        <strong>Frontend Modernization:</strong> Led the architectural migration of core
-        projects from Angular to React, improving application performance,
-        maintainability, and component reusability.
-      </li>
-      <li>
-        <strong>Backend Architecture:</strong> Designed and implemented highly scalable
-        RESTful APIs and microservices using Go, adhering strictly to clean architecture
-        principles to ensure decoupled and testable code.
-      </li>
-      <li>
-        <strong>Financial Integrations:</strong> Spearheaded the integration of
-        third-party payment gateways and designed a recurring payment system that
-        automated billing workflows.
-      </li>
-      <li>
-        <strong>DevOps &amp; Delivery:</strong> Optimized CI/CD processes and automated
-        cloud deployment workflows utilizing Azure DevOps and Docker-based environments.
-      </li>
-      <li>
-        <strong>Technical Leadership:</strong> Collaborated actively in software
-        architecture decisions, technical estimation sessions, and cross-functional Agile
-        ceremonies.
-      </li>
+      <li><b>Tecnólogo en Desarrollo de Software</b> — SENA (2025)</li>
+      <li><b>Formación en Desarrollo de Software</b> — Sofka U (2021)</li>
+      <li><b>Técnico en Desarrollo de Software</b> — SENA (2020)</li>
     </ul>
+  </section>
 
-    <h3>Junior Developer | Hibot Chat</h3>
-
-    <p class="dates">May 2021 – May 2022</p>
-
+  <section>
+    <h2>Certificaciones</h2>
     <ul>
-      <li>
-        <strong>Frontend Development:</strong> Developed responsive web applications using
-        Angular and managed complex application states efficiently with NgRx.
-      </li>
-      <li>
-        <strong>Backend &amp; Automation:</strong> Contributed to backend development
-        using Go under hexagonal architecture frameworks and developed automated
-        integrations and bots for WhatsApp, Facebook, Instagram, and Telegram.
-      </li>
-      <li>
-        <strong>Data Processing:</strong> Worked with MongoDB and crafted advanced
-        aggregation pipelines for high-performance data processing.
-      </li>
+      <li><b>Go Avanzado</b> — Platzi (2023)</li>
+      <li><b>Desarrollo Backend con Go</b> — Platzi (2023)</li>
     </ul>
+  </section>
 
-    <h3>Freelance Full Stack Developer | Remote</h3>
-
-    <p class="dates">2021 – 2022</p>
-
-    <ul>
-      <li>
-        <strong>Social Impact Platforms (Fundación ROFÉ):</strong> Developed digital
-        solutions for social impact initiatives, including the Mujeres ROFÉ platform
-        supporting economic independence for women and the Jóvenes creaTIvos system
-        focused on workforce training. Managed production deployments using Microsoft
-        Azure.
-      </li>
-      <li>
-        <strong>Enterprise Solutions (KIMSA):</strong> Designed and developed
-        administrative information systems for a climate change consulting firm, building
-        backend services with NestJS and frontends developed with Angular and React.
-      </li>
-      <li>
-        <strong>Systems Integration:</strong> Connected decoupled front-to-back systems
-        through RESTful APIs and managed cloud deployments using Heroku and Hostinger.
-      </li>
-    </ul>
-
-    <h2>SKILLS</h2>
-
-    <ul>
-      <li>
-        <strong>Programming Languages:</strong> Go (Golang), Java, TypeScript, JavaScript
-      </li>
-      <li><strong>Frontend:</strong> Angular, React, NgRx, HTML, CSS, SASS</li>
-      <li>
-        <strong>Backend &amp; APIs:</strong> Node.js, NestJS, Express.js, REST APIs,
-        Microservices
-      </li>
-      <li><strong>Databases:</strong> MongoDB, MySQL, Redis</li>
-      <li><strong>Cloud &amp; DevOps:</strong> Azure DevOps, Docker, CI/CD, GitHub Actions</li>
-      <li>
-        <strong>Architecture:</strong> Clean Architecture, Hexagonal Architecture, SOLID
-      </li>
-      <li><strong>Tools &amp; Agile:</strong> Git, Agile/Scrum, Jira</li>
-    </ul>
-
-    <h2>EDUCATION</h2>
-
-    <ul>
-      <li>
-        <strong>Software Development Technologist</strong> – SENA (In Progress)
-      </li>
-      <li><strong>Software Development Training</strong> – Sofka U (2021)</li>
-      <li><strong>Software Development Technician</strong> – SENA (2020)</li>
-    </ul>
-
-    <h2>CERTIFICATIONS</h2>
-
-    <ul>
-      <li><strong>Advanced Go</strong> – Platzi (2023)</li>
-      <li><strong>Backend Development with Go</strong> – Platzi (2023)</li>
-    </ul>
-  </body>
+</div>
+</body>
 </html>
